@@ -9,10 +9,12 @@ body {
 }
 
 h1 {
-	font:5px;
+	font:2px;
 	color:red;
 	font-family: Avenir;
 	list-style-type: none;
+	text-align:center;
+	text-transform:uppercase;
 	}
 	
 h2 {
@@ -24,15 +26,25 @@ h2 {
 .nav a {
     font-family: Avenir;
 	color:red;
+	text-transform: uppercase;
+	width:100%;
 }
 
 
+
 #site_nav a {
-	font-size: 36px;
+	font-size: 16px;
+	/* need site-nav a so it doesn't change all a classes */
+	
 }
 
 .menu-list {
 	margin-left: 0;
 	padding-left: 0;
 	list-style: none;
+	}
+	
+.clams_plus {
+	text-align: left;
 }
+	
