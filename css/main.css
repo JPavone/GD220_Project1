@@ -1,9 +1,38 @@
 body { 
     background-color: white;
-   font-family: Helvetica;
-} 
+   font-family: Avenir;
+   } 
+
+.menu {
+	background-color:#FDF2EE;
+	
+}
+
+h1 {
+	font:5px;
+	color:red;
+	font-family: Avenir;
+	list-style-type: none;
+	}
+	
+h2 {
+	font-family: Avenir;
+	font-weight:bold;
+	color:black;
+}
+
+.nav a {
+    font-family: Avenir;
+	color:red;
+}
 
 
-nav {color: red;
-}    
-    ​
+#site_nav a {
+	font-size: 36px;
+}
+
+.menu-list {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}

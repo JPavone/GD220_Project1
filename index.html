@@ -22,17 +22,26 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-       <nav>           
-   <ul class="list-nav"> <!--should this be an id tag-->
-<li><a href="nav-bar">About</a></li>
-<li><a href="nav-bar">Menu</a></li>
-<li><a href="nav-bar">Contact</a></li> 
-<li><a href="nav-bar">Gallery</a></li>       
+                  
+   <ul id="site_nav" class="nav"> <!--should this be an id or class-->
+<li><a href="About">About</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#contact">Contact</a></li> 
+<li><a href="Gallery">Gallery</a></li>       <!-- should these all be the same class --> 
 </ul>
-      </nav>    
-<ol type="Menu list">
+
+ <ul id="utility_nav" class="nav"> <!--should this be an id or class-->
+<li><a href="About">login</a></li>
+<li><a href="Menu">my account</a></li>       <!-- should these all be the same class --> 
+</ul>
+
+
+
+<div id="menu" class="menu">  
+	<h1>Menu</h1> 
+   <ol class="menu-list"> <!-- do i get rid of the numbers by creating a new class --> 
       <li>
-          <h1>Menu</h1>    
+          
       <h2>Appetizers</h2>
       <ul> 
       <li>Clams Casino $9</li>
@@ -42,6 +51,7 @@
       </ul>
      </li>
 
+ 
     <li>
      <h2>Salads</h2>
        <ul>
@@ -138,7 +148,7 @@
         </li>
         
         <p class="toppings">Additional toppings available: Pepperoni, Meat Sauce, Sausage, Ham, Salami, Cappicola, Mushrooms, Green Peppers, Onions, Tomatoes, Hot Peppers, Anchovies, Black Olives</p>
-  
+   </div>
    
 </ol>
 <h1>About</h1>
@@ -146,7 +156,8 @@
     
     <h1>Gallery</h1>
         
-    Contact us at <a href="mailto:strapazza@gmail.com">Strapazza</a>
+    <div id="contact">
+    Contact us at <a href="mailto:strapazza@gmail.com">Strapazza</a></div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
