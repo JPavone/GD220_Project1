@@ -1,50 +1,183 @@
 body { 
-    background-color: white;
-   font-family: Avenir;
+   background-color: #FDF2EE;
+   font-family: didot;
    } 
 
-.menu {
-	background-color:#FDF2EE;
-	
-}
-
-h1 {
-	font:2px;
-	color:red;
-	font-family: Avenir;
-	list-style-type: none;
-	text-align:center;
-	text-transform:uppercase;
-	}
-	
-h2 {
-	font-family: Avenir;
-	font-weight:bold;
-	color:black;
+.nav {
+        overflow: hidden; /* This clears floats */ 
+        text-align: center;
 }
 
 .nav a {
-    font-family: Avenir;
-	color:red;
-	text-transform: uppercase;
-	width:100%;
+    font-family: didot;
+    font-weight: bold;
+    color: #DC143C;
+    text-transform: uppercase;
+    width: 100%;  /* what does this do */
+    text-align:center;
+    text-decoration: none; 
 }
 
-
+#site_nav {
+    margin-top: 14px;
+    padding-top: 30px;
+    text-align: center; 
+    } /* background: rgba (255, 255, 255, .5) */
 
 #site_nav a {
-	font-size: 16px;
-	/* need site-nav a so it doesn't change all a classes */
-	
+    font-size: 18px;
+    /* need site-nav a so it doesn't change all a classes */
+    }
+
+.nav li {
+    display: inline;
+    margin: 0 0 0 25px;
+    /* float: left; for left justified menu */    
 }
 
-.menu-list {
-	margin-left: 0;
-	padding-left: 0;
-	list-style: none;
-	}
-	
-.clams_plus {
-	text-align: left;
+.nav li:first-child {
+    margin-left: 0;
 }
-	
+
+.logo-underline {   /* this is for the great italian food tag  */
+    font-weight:bolder;
+    color:black;
+    font-size: 12px;
+    text-align:center;  /* should this be text indent  */
+    text-transform:uppercase;
+}
+
+
+#header-pic {
+height: 550px
+        ;
+overflow: hidden; 
+background: url(http://farm3.static.flickr.com/2620/3944083570_27aac12ba6.jpg) center center no-repeat;
+opacity:.95;
+width:auto; /* shouldn't the photo span the page */
+z-index:-1;  /* did this have any effect*/
+ }
+    
+#title {
+    padding:40px 0 0 0;
+} /* controls where strapazza is on the page */
+
+#title h1 {
+ font-weight: bold;
+ color:black;
+ font-size:290%;
+ font-family: didot;
+ letter-spacing: 5px; 
+  }
+
+#menu {
+	text-align: center;
+}
+
+.menu {    /* is this for the container only  */
+    background-color:#FDF2EE;
+    }
+
+
+h1 {
+    font-size: 25px;
+    color:#DC143C;
+    font-family: didot;
+    font-weight: bold;
+    text-align:center;
+    text-transform:uppercase;
+    line-height: 150%; 
+   }
+
+
+h2 {
+    font-family: didot;
+    font-weight:bold;
+    font-size: 22px;
+    color:black;
+}
+
+
+.menu-list {
+overflow: hidden;
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.menu-list > li {
+    float: left;
+    width: 50%;
+}
+
+.menu-list ul li {
+    font-weight:bold;
+    color: black;
+    font-size: 14px;
+}
+
+    
+#about {
+    padding:10px 0 0 0;
+    height: 300px;
+    opacity: 75;
+    width:auto;
+overflow: hidden; 
+background: url(http://www.homemade-pasta.com/graphics/about2.jpg) center center no-repeat;
+width:auto; /* shouldn't the photo span the page */
+z-index:-1;  /* did this have any effect*/
+}    /*does this target the container*/
+ 
+#about p {
+    width:300px;
+  height:180px;
+  margin:20px 205px;
+  background-color:#ffffff;
+  opacity:0.85;
+  padding: 10px 
+} 
+
+.about p {
+	color:black;
+	font-weight: bolder;
+} 
+
+.about h1 {
+	color: yellow;
+}  
+ 
+#gallery {
+    padding-top: 40px;
+    } 
+    
+.about h1 {
+	color:red;
+}   
+
+.contact h2 {
+	 font-family: didot;
+    font-weight:bold;
+    font-size: 22px;
+    color:black;
+}
+ 
+.contact p {
+	color:black;
+} 
+ 
+    
+      
+#contact a {
+    text-decoration: none;
+    color:black;
+    font-family: sans-serif;
+}  
+
+      
+    
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+    
