@@ -27,10 +27,11 @@ body {
 
 .title-address {
     font-family: didot, serif;
-    font-weight: bolder;
+    font-weight: bold;
+    color: black;
     text-transform: uppercase;   
     text-align: center;
-    margin:120px 50px 15px 50px;
+    margin:170px 50px 15px 50px;
     font-size:90%
    }
 
