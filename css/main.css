@@ -143,9 +143,10 @@ overflow: hidden;
 
  
 .mygallery img {
- width:200px;
-    height: 250px;
+ width:400px;
+    height: 350px;
     text-align: center;
+    margin-left: 50px;
     }
 
 #about {
