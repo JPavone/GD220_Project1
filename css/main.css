@@ -3,11 +3,6 @@ body {
    font-family: didot, serif;
    } 
 
-#wrapper {
- min-width: 380 px;
-    margin-left:auto;
-    margin-right:auto;
-}
 
 
 .nav {
@@ -31,11 +26,9 @@ body {
     color: black;
     text-transform: uppercase;   
     text-align: center;
-    margin:170px 50px 15px 50px;
+    margin:200px 50px 15px 50px;
     font-size:90%
    }
-
-
 
 #site_nav {
     margin-top: 10px; /* why does this effect the location of strapazza */
@@ -46,6 +39,7 @@ body {
 
 #site_nav a {
     font-size: 18px;
+    font-weight: bold;
     /* need site-nav a so it doesn't change all a classes */
     }
 
@@ -87,14 +81,20 @@ z-index:-1;  /* did this have any effect*/
  font-size:290%;
  font-family: didot, serif;
  letter-spacing: 4px; 
+ text-align: center;
   }
 
 #menu {
-    text-align: center;
+    text-align: left;
+   
 }
 
 #menu ul {
      list-style: none;
+}
+
+#menu h1 {
+	text-align: center;
 }
 
 .menu {    /* is this for the container only  */
@@ -110,15 +110,16 @@ h1 {
     font-weight: bold;
     text-align:center;
     text-transform:uppercase;
-    line-height: 125%; 
+    line-height: 105%; 
    }
-
 
 h2 {
     font-family: didot, serif;
     font-weight:bold;
     font-size: 22px;
     color:black;
+    text-align: left;
+  margin-left: 30px;
 }
 
 .menu-list {
@@ -178,9 +179,7 @@ z-index:-1;  /* did this have any effect*/
     color: yellow;
 }  
  
-#gallery {
-    padding-top: 0px;
-    } 
+
     
 .about h1 {
     color:red;
@@ -202,8 +201,15 @@ z-index:-1;  /* did this have any effect*/
 text-decoration: none;
 }
 
-    
+.daily {
+	margin-left: 30px;
+}    
 
+iframe {
+ position: absolute;
+ left:35px;
+}
+}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
