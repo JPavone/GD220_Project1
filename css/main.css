@@ -3,8 +3,6 @@ body {
    font-family: didot, serif;
    } 
 
-
-
 .nav {
     overflow: hidden; /* This clears floats */ /* can you explain? doesn't make sense */
          text-align: center;
@@ -141,7 +139,6 @@ overflow: hidden;
     line-height:125%;
 }
 
-
  
 .mygallery img {
  width:400px;
@@ -206,8 +203,7 @@ text-decoration: none;
 }    
 
 iframe {
- position: absolute;
- left:35px;
+ text-align: center;
 }
 }
 
