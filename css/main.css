@@ -1,16 +1,23 @@
 body { 
    background-color: #FDF2EE;
-   font-family: didot;
+   font-family: didot, serif;
    } 
 
+#wrapper {
+ min-width: 380 px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
 .nav {
-        overflow: hidden; /* This clears floats */ 
-        text-align: center;
+    overflow: hidden; /* This clears floats */ /* can you explain? doesn't make sense */
+         text-align: center;
 }
 
 .nav a {
-    font-family: didot;
-    font-weight: bold;
+    font-family: didot, serif;
+    font-weight: normal;
     color: #DC143C;
     text-transform: uppercase;
     width: 100%;  /* what does this do */
@@ -18,9 +25,21 @@ body {
     text-decoration: none; 
 }
 
+.title-address {
+    font-family: didot, serif;
+    font-weight: bolder;
+    text-transform: uppercase;   
+    text-align: center;
+    margin:120px 50px 15px 50px;
+    font-size:90%
+   }
+
+
+
 #site_nav {
-    margin-top: 14px;
-    padding-top: 30px;
+    margin-top: 10px; /* why does this effect the location of strapazza */
+    padding-top: 5px;
+    padding-bottom:1px;
     text-align: center; 
     } /* background: rgba (255, 255, 255, .5) */
 
@@ -32,14 +51,14 @@ body {
 .nav li {
     display: inline;
     margin: 0 0 0 25px;
-    /* float: left; for left justified menu */    
+    /* float: left; for left justified menu */    /* pls explain */
 }
 
 .nav li:first-child {
     margin-left: 0;
 }
 
-.logo-underline {   /* this is for the great italian food tag  */
+.logo-underline {   /* this is for the "great italian" food subhead under title  */
     font-weight:bolder;
     color:black;
     font-size: 12px;
@@ -49,8 +68,7 @@ body {
 
 
 #header-pic {
-height: 550px
-        ;
+height:520px;
 overflow: hidden; 
 background: url(http://farm3.static.flickr.com/2620/3944083570_27aac12ba6.jpg) center center no-repeat;
 opacity:.95;
@@ -66,37 +84,41 @@ z-index:-1;  /* did this have any effect*/
  font-weight: bold;
  color:black;
  font-size:290%;
- font-family: didot;
- letter-spacing: 5px; 
+ font-family: didot, serif;
+ letter-spacing: 4px; 
   }
 
 #menu {
-	text-align: center;
+    text-align: center;
+}
+
+#menu ul {
+     list-style: none;
 }
 
 .menu {    /* is this for the container only  */
     background-color:#FDF2EE;
-    }
-
+       padding-top:5px;
+    padding-bottom:2px; 
+     } 
 
 h1 {
     font-size: 25px;
     color:#DC143C;
-    font-family: didot;
+    font-family: didot, serif;
     font-weight: bold;
     text-align:center;
     text-transform:uppercase;
-    line-height: 150%; 
+    line-height: 125%; 
    }
 
 
 h2 {
-    font-family: didot;
+    font-family: didot, serif;
     font-weight:bold;
     font-size: 22px;
     color:black;
 }
-
 
 .menu-list {
 overflow: hidden;
@@ -114,9 +136,21 @@ overflow: hidden;
     font-weight:bold;
     color: black;
     font-size: 14px;
+    line-height:125%;
 }
 
-    
+
+.mygallery {
+    width:300px;
+    height: 350px;  
+}
+ 
+.mygallery img {
+ width:300px;
+    height: 350px;
+        display:none;
+    }
+
 #about {
     padding:10px 0 0 0;
     height: 300px;
@@ -138,12 +172,12 @@ z-index:-1;  /* did this have any effect*/
 } 
 
 .about p {
-	color:black;
-	font-weight: bolder;
+    color:black;
+    font-weight: bolder;
 } 
 
 .about h1 {
-	color: yellow;
+    color: yellow;
 }  
  
 #gallery {
@@ -151,11 +185,11 @@ z-index:-1;  /* did this have any effect*/
     } 
     
 .about h1 {
-	color:red;
+    color:red;
 }   
 
 .contact h2 {
-	 font-family: didot;
+     font-family: didot;
     font-weight:bold;
     font-size: 22px;
     color:black;
@@ -170,6 +204,7 @@ z-index:-1;  /* did this have any effect*/
 text-decoration: none;
 }
 
+    
 
 
 @media
@@ -177,4 +212,5 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
 }
-    
+
+​
