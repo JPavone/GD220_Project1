@@ -8,7 +8,9 @@ body {
          text-align: center;
 }
 
-.nav a {
+.nav a:link,
+.nav a:visited,
+.nav a:active {
     font-family: didot, serif;
     font-weight: normal;
     color: #DC143C;
@@ -18,20 +20,23 @@ body {
     text-decoration: none; 
 }
 
+.nav a:hover {
+	color: #000;
+}
+
 .title-address {
     font-family: didot, serif;
     font-weight: bold;
     color: black;
     text-transform: uppercase;   
     text-align: center;
-    margin:200px 50px 15px 50px;
+    margin:0 50px 15px 50px;
     font-size:90%
    }
 
 #site_nav {
-    margin-top: 10px; /* why does this effect the location of strapazza */
-    padding-top: 5px;
-    padding-bottom:1px;
+    margin: 0 0 20px;
+    padding: 50px 0 0;
     text-align: center; 
     } /* background: rgba (255, 255, 255, .5) */
 
@@ -40,7 +45,6 @@ body {
     font-weight: bold;
     /* need site-nav a so it doesn't change all a classes */
     }
-
 .nav li {
     display: inline;
     margin: 0 0 0 25px;
@@ -61,19 +65,21 @@ body {
 
 
 #header-pic {
-height:520px;
-overflow: hidden; 
 background: url(http://farm3.static.flickr.com/2620/3944083570_27aac12ba6.jpg) center center no-repeat;
+-webkit-background-size: cover;
 opacity:.95;
 width:auto; /* shouldn't the photo span the page */
 z-index:-1;  /* did this have any effect*/
+margin-bottom: 0
  }
     
 #title {
-    padding:40px 0 0 0;
+    padding:0 0 0 0;
 } /* controls where strapazza is on the page */
 
 #title h1 {
+	margin: 0;
+	padding: 0;
  font-weight: bold;
  color:black;
  font-size:290%;
@@ -121,8 +127,10 @@ h2 {
 }
 
 .menu-list {
-overflow: hidden;
-    margin-left: 0;
+	width: 50%;
+	margin: 0 auto;
+	padding-left: 30%;
+	overflow: hidden;
     padding-left: 0;
     list-style: none;
 }
@@ -137,6 +145,11 @@ overflow: hidden;
     color: black;
     font-size: 14px;
     line-height:125%;
+}
+
+.menu-list h2,
+.menu-list ul {
+	margin-left: 0;
 }
 
  
@@ -154,6 +167,7 @@ overflow: hidden;
     width:auto;
 overflow: hidden; 
 background: url(http://www.homemade-pasta.com/graphics/about2.jpg) center center no-repeat;
+background-size: cover;
 width:auto; /* shouldn't the photo span the page */
 z-index:-1;  /* did this have any effect*/
 }    /*does this target the container*/
@@ -161,7 +175,7 @@ z-index:-1;  /* did this have any effect*/
 #about p {
     width:300px;
   height:180px;
-  margin:20px 205px;
+  margin:20px auto;
   background-color:#ffffff;
   opacity:0.85;
   padding: 10px 
@@ -211,5 +225,20 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
 }
+
+
+/* 
+
+Desktop Media Query
+
+*/
+
+@media only screen and ( max-width: 760px ) {
+	
+
+	
+		
+}
+
 
 ​
